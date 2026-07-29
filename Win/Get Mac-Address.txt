@@ -1,0 +1,9 @@
+REM
+REM Made by M-Ouxi & Crzy-Milano (https://github.com/M-Ouxi) & (https://github.com/Crzy-Milano)
+REM
+
+GUI r
+DELAY 1000
+STRINGLN Powershell
+DELAY 500
+STRINGLN Get-NetAdapter | Select-Object Name, Status, MacAddress
