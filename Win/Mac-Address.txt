@@ -1,5 +1,6 @@
 REM
 REM Made by M-Ouxi & Crzy-Milano (https://github.com/M-Ouxi) & (https://github.com/Crzy-Milano)
+REM This will show MAC Address
 REM
 
 GUI r
